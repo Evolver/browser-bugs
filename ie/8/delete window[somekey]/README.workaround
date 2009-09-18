@@ -1,0 +1,15 @@
+
+  You have to dereference data you want to delete either by
+    window[prop] =null
+      or
+    window[prop] =undefined
+    
+  Second variant is better, it allows to test if variable is undefined
+    like this:
+    
+    if( window[prop] ===undefined)
+    
+  which works for both vars that are undefined and that have 'undefined'
+    value type.
+    
+  This workaround does not remove actual property 'prop' of window object.

@@ -1,0 +1,27 @@
+
+  Currently known workaround to determine if node was removed from DOM in IE is this:
+  
+    function inDOM( elem) {
+      if( elem.parentNode ===null)
+        return false;// W3C, OK
+        
+      // test IE
+      var par =elem.parentNode, i;
+      for( i =0; i < par.childNodes.length; ++i)
+        if( par.childNodes[i] ==elem)
+          return true;// found as child node
+          
+      // element is not in DOM anymore
+      return false;
+    }
+    
+    
+  Usage:
+  
+    var myElem =...;
+    
+    if( inDOM( myElem)) {
+      // in DOM
+    } else {
+      // not in DOM
+    }
