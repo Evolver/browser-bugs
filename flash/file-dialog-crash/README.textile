@@ -1,6 +1,11 @@
 
   Adobe Flash crashes when it's OBJECT is removed from DOM while file selection
-    dialog, initiated and opened by Flash, is opened.
+    dialog, initiated and opened by Flash, is opened. Make sure you run test.html
+    by accessing it through a domain, not by opening file locally from your
+    computer, e.g. http://example.com/test.html, because otherwise flash will
+    not open dialog box.
+    
+  ---------------------
     
   I have managed somehow to see Google Chrome stopping any JavaScript execution
     while dialog box is opened, thus DOM was not able to get manipulated outside
