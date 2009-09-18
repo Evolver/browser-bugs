@@ -1,4 +1,9 @@
 
+  Using delete window[prop] throws an exception with error 'Object does not support this
+    property or method', where it shouldn't.
+    
+  Workaround:
+  
   You have to dereference data you want to delete either by
     window[prop] =null
       or

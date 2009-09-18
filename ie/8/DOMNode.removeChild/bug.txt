@@ -1,4 +1,0 @@
-
-  When removing node from DOM using .removeChild, parentNode of removed element
-  is not being set to null, where it should be. In IE, parentNode becomes equal
-  to ownerDocument of node.

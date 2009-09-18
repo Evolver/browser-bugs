@@ -1,5 +1,12 @@
 
-  Currently known workaround to determine if node was removed from DOM in IE is this:
+  When removing node from DOM using .removeChild, parentNode of removed element
+  is not being set to null, where it should be. In IE, parentNode becomes equal
+  to ownerDocument of node.
+
+  Workaround: detect if either parentNode is null or parentNode has current elem.
+    in it's childNodes.
+    
+  Example function:
   
     function inDOM( elem) {
       if( elem.parentNode ===null)

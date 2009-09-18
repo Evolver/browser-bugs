@@ -5,13 +5,11 @@
     computer, e.g. http://example.com/test.html, because otherwise flash will
     not open dialog box.
     
-  <br /><br />
-    
   I have managed somehow to see Google Chrome stopping any JavaScript execution
     while dialog box is opened, thus DOM was not able to get manipulated outside
     flash. But, then i updated to the most recent version and it still had that
     bug.
-    
-  <br /><br />
   
   Tested under WinXP 32bit, Flash 10.0.32.18, IE8, FF 3.5.3, Chrome 3.0.1, Safari 4.0.3.
+
+  There is no workaround known for this bug.

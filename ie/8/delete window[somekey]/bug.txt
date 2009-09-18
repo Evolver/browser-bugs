@@ -1,3 +1,0 @@
-
-  Using delete window[prop] throws an exception with error 'Object does not support this
-    property or method', where it shouldn't.
