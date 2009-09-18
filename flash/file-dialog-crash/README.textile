@@ -5,7 +5,7 @@
     computer, e.g. http://example.com/test.html, because otherwise flash will
     not open dialog box.
     
-  ---------------------
+  <br /><br />
     
   I have managed somehow to see Google Chrome stopping any JavaScript execution
     while dialog box is opened, thus DOM was not able to get manipulated outside
