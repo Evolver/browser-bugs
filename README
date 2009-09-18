@@ -2,8 +2,10 @@
   This repo contains list of known browser bugs for browser latest publicly released versions,
     and tests for those bugs.
     
+  Bug summary is in "bug.txt" files. 
+    
   If bug becomes fixed in the most recent publicly released version of browser, it is being
-    marked as fixed by adding in a bug's directory file named "README.fixed" with version number of
+    marked as fixed by adding in a bug's directory file named "fixed.txt" with version number of
     browser, in which the fix is introduced.
     
-  If workaround is available, it will be described in "README.workaround" file.
+  If workaround is available, it will be described in "workaround.txt" file.
