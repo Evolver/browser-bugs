@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" dir="ltr">
+<head>
+  <title>Browser's bug test</title>
+  <script type="text/javascript">
+  //<![CDATA[
+    function debug( message) {
+      document.getElementById( 'debug').innerHTML +=message +'<br />';
+    }
+  //]]>
+  </script>
+</head>
+<body id="body">
+  <div id="debug"></div>
+
+  <script type="text/javascript">
+  //<![CDATA[
+    var body =document.getElementById( 'body');
+    
+    // create node
+    var node =document.createElement( 'div');
+    body.appendChild( node);
+    body.removeChild( node);
+    
+    if( node.parentNode !==null)
+      debug( 'FAIL. parentNode is ' +node.parentNode +', where it should be null.');
+    else
+      debug( 'PASS');
+  //]]>
+  </script>
+
+</body>
+</html>
