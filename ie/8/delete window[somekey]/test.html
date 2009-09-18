@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" dir="ltr">
+<head>
+  <title>Browser's bug test</title>
+  <script type="text/javascript">
+  //<![CDATA[
+    function debug( message) {
+      document.getElementById( 'debug').innerHTML +=message +'<br />';
+    }
+  //]]>
+  </script>
+</head>
+<body>
+  <div id="debug"></div>
+
+  <script type="text/javascript">
+  //<![CDATA[
+    var anyKey ='test';
+    
+    // set window property
+    window[ anyKey] ='test';
+    
+    try {
+      delete window[ anyKey];
+      debug( 'PASS');
+    } catch( e) {
+      debug( 'FAIL: ' +e);
+    }
+  //]]>
+  </script>
+
+</body>
+</html>

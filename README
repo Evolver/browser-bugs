@@ -4,4 +4,4 @@
     
   If bug becomes fixed in the most recent publicly released version of browser, it is being
     marked as fixed by adding in a bug's directory file named "FIXED" with version number of
-    browser, in which the fix is applied.
+    browser, in which the fix is introduced.
