@@ -1,0 +1,8 @@
+
+  Adobe Flash crashes when it's OBJECT is removed from DOM while file selection
+    dialog, initiated and opened by Flash, is opened.
+    
+  I have managed somehow to see Google Chrome stopping any JavaScript execution
+    while dialog box is opened, thus DOM was not able to get manipulated outside
+    flash. But, then i updated to the most recent version and it still had that
+    bug.
